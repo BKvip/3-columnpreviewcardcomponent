@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap");
+
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center;
+        background-color: hsl(0, 0%, 95%);
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 200;
+      }
+
+      main {
+        min-width: 50rem;
+        width: 60vw;
+        margin: auto;
+        min-height: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: hsla(0, 0%, 100%, 0.75);
+        border-radius: 0.5rem;
+        box-shadow: 2px 2px 5px 1px #00000021;
+      }
+      footer {
+        margin-bottom: 1rem;
+      }
+      .card1 {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+
+        background-color: hsl(31, 77%, 52%);
+        padding: 3rem;
+      }
+      .card2 {
+        background-color: hsl(184, 100%, 22%);
+        padding: 3rem;
+      }
+      .card3 {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+
+        background-color: hsl(179, 100%, 13%);
+        padding: 3rem;
+      }
+
+      .title {
+        font-family: "Big Shoulders Display", cursive;
+        font-weight: 700;
+        font-size: 2rem;
+      }
+
+      .learnmore {
+        font-weight: 400;
+        margin-top: 5rem;
+        padding: 1rem;
+        background-color: hsl(0, 0%, 95%);
+        border: 0.1rem solid hsl(0, 0%, 95%);
+        border-radius: 2rem;
+        text-align: center;
+      }
+
+      .button1 {
+        color: hsl(31, 77%, 52%);
+      }
+      .button1:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(31, 77%, 52%);
+      }
+
+      .button2 {
+        color: hsl(184, 100%, 22%);
+      }
+      .button2:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .button3 {
+        color: hsl(179, 100%, 13%);
+      }
+      .button3:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        background-color: hsl(179, 100%, 13%);
+      }
+      .attribution {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (max-width: 600px) {
+        main {
+          min-width: 10rem;
+          margin: 0.5rem auto;
+          grid-template-columns: 1fr;
+          width: 90vw;
+        }
+
+        .card1 {
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+          border-bottom-left-radius: 0rem;
+        }
+        .card3 {
+          border-top-right-radius: 0rem;
+          border-bottom-right-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          background-color: hsl(179, 100%, 13%);
+          padding: 3rem;
+        }
+        .learnmore {
+          margin-top: 2rem;
+          padding: 1rem;
+          width: 30vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card1">
+        <div><img src="./images/icon-sedans.svg" alt="" /></div>
+        <h1 class="title">Sedans</h1>
+        <div>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </div>
+        <div class="learnmore button1">Learn More</div>
+      </div>
+      <div class="card2">
+        <div><img src="./images/icon-suvs.svg" alt="" /></div>
+        <h1 class="title">SUVs</h1>
+        <div>
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </div>
+        <div class="learnmore button2">Learn More</div>
+      </div>
+
+      <div class="card3">
+        <div><img src="./images/icon-luxury.svg" alt="" /></div>
+        <h1 class="title">Luxury</h1>
+        <div>
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </div>
+        <div class="learnmore button3">Learn More</div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Supakron Klampod</a>.
+      </div>
+    </footer>
+  </body>
+</html>
